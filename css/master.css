@@ -1,0 +1,83 @@
+html{
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+header{
+	text-align: center;
+	background-color: hsla(0, 100%, 43%, 0.85);
+	color: white;
+}
+section{
+	text-align: center;
+	display: block;
+	margin: auto;
+	max-width: 600px;
+}
+#name{
+	display: none;
+}
+#name.visible{
+	display: block;
+}
+
+#race{
+	display: none;
+}
+#race.visible{
+	display: block;
+}
+
+#class{
+	display: none;
+}
+#class.visible{
+	display: block;
+}
+button{
+	clear: both;
+	border-width: 0;
+	padding: .5em 1em;
+	margin: 1em;
+	font-size: 1.25em;
+	background-color: hsla(0, 100%, 43%, 0.85);
+	color: white;
+}
+br{
+	clear: both;
+}
+#alignment{
+	display: none;
+	text-align: center;
+}
+#alignment.visible{
+	display: block;
+}
+#alignment button{
+	display: block;
+}
+div{
+	margin: auto;
+}
+.radio{
+	text-align: left;
+	line-height: 1.5em;
+	width: 32%;
+	display: block;
+	float: left;
+}
+.odd{
+	clear: both;
+}
+#background{
+	display: none;
+}
+#background.visible{
+	display: block;
+}
+
+#end-display{
+	display: none;
+}
+#end-display.visible{
+	display: block;
+}
+

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8"/>
+        <meta name="description" content=""/>
+		<meta name="keywords" content=""/>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title></title>
+		<link rel="stylesheet" type="text/css" href="css/normalize.css">
+		<link rel="stylesheet" type="text/css" href="css/master.css">
+    </head>
+    <body>
+        <header>
+			<br>
+			<h1>Tabletop Character Builder</h1>
+			<br>
+        </header>
+        <main>
+			<section id="intro">
+				<p>This app will guide you through building a basic table top fantasy character for games like Dungeons and Dragons and Pathfinders. Press the button to begin.</p>
+				<button id="start">Start</button>
+			</section>
+			<section id="name">
+				<p>Please enter the name for your character.</p>
+				<input type="text" id="name-input">
+				<br><button class="next" id="name-next">Next</button>
+			</section>
+			<section id="race">
+				<p>Please pick a race for your character.</p>
+				<div class="radio">
+					<input type="radio" name="races" value="Hill Dwarf" >Hill Dwarf<br>
+					<input type="radio" name="races" value="Mountain Dwarf" >Mountain Dwarf<br>
+					<input type="radio" name="races" value="Lightfoot Halfling" >Lightfoot Halfling<br>
+					<input type="radio" name="races" value="Stout Halfling" >Stout Halfling<br>
+				</div>
+				<div class="radio">
+					<input type="radio" name="races" value="High Elf" >High Elf<br>
+					<input type="radio" name="races" value="Wood Elf" >Wood Elf<br>
+					<input type="radio" name="races" value="Drow" >Drow<br>
+					<input type="radio" name="races" value="Human" >Human<br>
+					<input type="radio" name="races" value="Half-Elf" >Half-Elf<br>
+					<input type="radio" name="races" value="Half-Orc" >Half-Orc<br>
+				</div>
+				<div class="radio">
+					<input type="radio" name="races" value="Forest Gnome" >Forest Gnome<br>
+					<input type="radio" name="races" value="Rock Gnome" >Rock Gnome<br>
+					<input type="radio" name="races" value="Dragonborn" >Dragonborn<br>
+					<input type="radio" name="races" value="Tiefling" >Tiefling<br>
+				</div>
+				<br><button class="next" id="race-next">Next</button>
+			</section>
+			<section id="class">
+				<p>Please pick a class for your character.</p>
+				<div class="radio">
+					<input type="radio" name="cclass" value="Barbarian" >Barbarian<br>
+					<input type="radio" name="cclass" value="Bard" >Bard<br>
+					<input type="radio" name="cclass" value="Cleric" >Cleric<br>
+					<input type="radio" name="cclass" value="Druid" >Druid<br>
+				</div>
+				<div class="radio">
+					<input type="radio" name="cclass" value="Fighter" >Fighter<br>
+					<input type="radio" name="cclass" value="Monk" >Monk<br>
+					<input type="radio" name="cclass" value="Paladin" >Paladin<br>
+					<input type="radio" name="cclass" value="Ranger" >Ranger<br>
+				</div>
+				<div class="radio">
+					<input type="radio" name="cclass" value="Rogue" >Rogue<br>
+					<input type="radio" name="cclass" value="Sorcerer" >Sorcerer<br>
+					<input type="radio" name="cclass" value="Warlock" >Warlock<br>
+					<input type="radio" name="cclass" value="Wizard" >Wizard<br>
+				</div>
+				<br><button class="next" id="class-next">Next</button>
+			</section>
+			<section id="alignment">
+				<p>Please pick an alignment for your character.</p>
+				<div class="radio">
+					<input type="radio" name="align" value="Lawful Good" >Lawful Good<br>
+					<input type="radio" name="align" value="Lawful Neutral" >Lawful Neutral<br>
+					<input type="radio" name="align" value="Lawful Evil" >Lawful Evil<br>
+				</div>
+				<div class="radio">
+					<input type="radio" name="align" value="Neutral Good" >Neutral Good<br>
+					<input type="radio" name="align" value="True Neutral" >True Neutral<br>
+					<input type="radio" name="align" value="Neutral Evil" >Neutral Evil<br>
+				</div>
+				<div class="radio">
+					<input type="radio" name="align" value="Chaotic Good" >Chaotic Good<br>
+					<input type="radio" name="align" value="Chaotic Neutral" >Chaotic Neutral<br>
+					<input type="radio" name="align" value="Chaotic Evil" >Chaotic Evil<br>
+				</div>
+				<br><button class="next" id="align-next">Next</button>
+			</section>
+			<section id="background">
+				<p>Please pick a background for your character.</p>
+				<div class="radio">
+					<input type="radio" name="bg" value="Acolyte" >Acolyte<br>
+					<input type="radio" name="bg" value="Charlatan" >Charlatan<br>
+					<input type="radio" name="bg" value="Criminal" >Criminal<br>
+					<input type="radio" name="bg" value="Entertainer" >Entertainer<br>
+				</div>
+				<div class="radio">
+					<input type="radio" name="bg" value="Folk Hero" >Folk Hero<br>
+					<input type="radio" name="bg" value="Guild Artisan" >Guild Artisan<br>
+					<input type="radio" name="bg" value="Hermit" >Hermit<br>
+					<input type="radio" name="bg" value="Noble" >Noble<br>
+					<input type="radio" name="bg" value="Urchin">Urchin<br>
+				</div>
+				<div class="radio">
+					<input type="radio" name="bg" value="Outlander" >Outlander<br>
+					<input type="radio" name="bg" value="Sage" >Sage<br>
+					<input type="radio" name="bg" value="Sailor" >Sailor<br>
+					<input type="radio" name="bg" value="Soldier" >Soldier<br>
+				</div>
+				<br><button class="next" id="bg-next">Next</button>
+			</section>
+			<section id="end-display">
+				<p id="display-name">Name:         </p>
+				<p id="display-race">Race:         </p>
+				<p id="display-class">Class:        </p>
+				<p id="display-align">Alignment:    </p>
+				<p id="display-bg">Background:   </p>
+				<br><button class="next" id="againbtn">Again?</button>
+			</section>
+        </main>
+        <footer>
+		</footer>
+		<script src="js/scripts.js"></script>
+    </body>
+</html>
